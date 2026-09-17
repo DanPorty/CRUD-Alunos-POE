@@ -128,6 +128,7 @@
             buttonCancel.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             buttonCancel.UseAccentColor = false;
             buttonCancel.UseVisualStyleBackColor = true;
+            buttonCancel.Click += buttonCancel_Click;
             // 
             // txtSenha
             // 
@@ -396,6 +397,7 @@
             tabPageConsulta.TabIndex = 1;
             tabPageConsulta.Text = "Consulta";
             tabPageConsulta.UseVisualStyleBackColor = true;
+            tabPageConsulta.Enter += tabPageConsulta_Enter;
             // 
             // buttonExclude
             // 
@@ -416,6 +418,7 @@
             buttonExclude.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             buttonExclude.UseAccentColor = false;
             buttonExclude.UseVisualStyleBackColor = true;
+            buttonExclude.Click += buttonExclude_Click;
             // 
             // buttonEditar
             // 
@@ -436,6 +439,7 @@
             buttonEditar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             buttonEditar.UseAccentColor = false;
             buttonEditar.UseVisualStyleBackColor = true;
+            buttonEditar.Click += buttonEditar_Click;
             // 
             // buttonNew
             // 
@@ -456,15 +460,18 @@
             buttonNew.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             buttonNew.UseAccentColor = false;
             buttonNew.UseVisualStyleBackColor = true;
+            buttonNew.Click += buttonNew_Click;
             // 
             // livAlunos
             // 
             livAlunos.Dock = DockStyle.Top;
+            livAlunos.HeaderStyle = ColumnHeaderStyle.Nonclickable;
             livAlunos.Location = new Point(3, 3);
             livAlunos.Name = "livAlunos";
             livAlunos.Size = new Size(508, 441);
             livAlunos.TabIndex = 0;
             livAlunos.UseCompatibleStateImageBehavior = false;
+            livAlunos.MouseDoubleClick += livAlunos_MouseDoubleClick;
             // 
             // imageList
             // 
